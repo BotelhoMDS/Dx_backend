@@ -2,9 +2,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 const {
  PORT,
- pgConnection
+  POSTGRES_URL
 } = process.env;
 module.exports = {
  port: PORT,
- urlConnection: pgConnection
+  urlConnection: POSTGRES_URL
 }
